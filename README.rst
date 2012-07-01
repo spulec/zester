@@ -2,7 +2,7 @@ Zester
 =========================
 
 
-** This project is currently under development **
+**This project is currently under development**
 
 Zester is a library that makes it easier to develop Python clients for websites without APIs.
 
