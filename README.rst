@@ -2,6 +2,8 @@ Zester
 =========================
 
 
+** This project is currently under development **
+
 Zester is a library that makes it easier to develop Python clients for websites without APIs.
 
 No lxml, no XPath, just javascript.
@@ -31,11 +33,3 @@ Now, let's use the client we just made. Open a python shell::
     "http://daltoncaldwell.com/what-twitter-could-have-been"
     >>> print stories[0].points
     "56"
-
-
-Installation
-------------
-
-To install zester, simply: ::
-
-    $ pip install zester
