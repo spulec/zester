@@ -3,7 +3,7 @@ python:
   - 2.7
 script: make travis
 before_install:
-  - sudo add-apt-repository ppa:pyside
+  - echo 'yes' | sudo add-apt-repository ppa:pyside
   - sudo apt-get update
   - sudo apt-get install python-pyside
 install:
