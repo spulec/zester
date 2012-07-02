@@ -3,8 +3,10 @@ python:
   - 2.7
 script: make travis
 before_install:
-  - sudo apt-get install python-sip-dev
-  - sudo apt-get install python-qt4
+  - sudo apt-get install python-sip-dev python-qt4 qt4-dev-tools python-qt4-dev pyqt4-dev-tools
+  - python -c 'import sip'
+  - python -c 'import PyQt4'
+  - python -c 'import PyQt4.QtCore'
 install:
   - pip install nose
   - pip install Ghost.py==0.1b
