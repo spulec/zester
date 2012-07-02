@@ -9,4 +9,3 @@ before_install:
 install:
   - pip install nose
   - pip install Ghost.py==0.1b
-  - pip install . --use-mirrors
