@@ -3,7 +3,7 @@ python:
   - 2.7
 script: make travis
 before_install:
-  - sudo apt-get install python-sip-dev python-qt4 qt4-dev-tools python-qt4-dev pyqt4-dev-tools
+  - sudo apt-get install python-sip python-sip-dev python-qt4 qt4-dev-tools python-qt4-dev pyqt4-dev-tools
   - python -c 'import sip'
   - python -c 'import PyQt4'
   - python -c 'import PyQt4.QtCore'
