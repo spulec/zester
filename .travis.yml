@@ -3,7 +3,8 @@ python:
   - 2.7
 script: make travis
 before_install:
-  - sudo apt-get install libudev-dev
+  - sudo apt-get install python-sip-dev
+  - sudo apt-get install python-qt4
 install:
   - pip install nose
   - pip install Ghost.py==0.1b
