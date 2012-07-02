@@ -3,8 +3,6 @@ Zester
 
 **This project is currently under development**
 
-.. image:: https://secure.travis-ci.org/spulec/zester.png?branch=master
-
 Zester is a library that makes it easier to develop Python clients for websites without APIs.
 
 No lxml, no XPath, just javascript.

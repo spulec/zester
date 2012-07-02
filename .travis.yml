@@ -3,7 +3,7 @@ python:
   - 2.7
 script: make travis
 install:
-  - sudo apt-get install python-qt4
+  - sudo apt-get install python-qt4 pyqt4-dev-tools qt4-designer
   - pip install nose
   - pip install Ghost.py==0.1b
 before_script:
