@@ -3,18 +3,21 @@ python:
   - 2.7
 script: make travis
 before_install:
-  - result=`pip install sip`
-  - cd $VIRTUAL_ENV/build/sip
+  - wget http://www.riverbankcomputing.com/static/Downloads/sip4/sip-4.13.3.tar.gz
+  - tar zxvf sip-4.13.3.tar.gz
+  - cd sip-4.13.3/
   - python configure.py
   - make
   - sudo make install
-  - cd $VIRTUAL_EN
+  - cd ..
   - python -c 'import sip'
-  - result=`pip install pyqt`
-  - cd $VIRTUAL_ENV/build/pyqt
+  - wget http://www.riverbankcomputing.com/static/Downloads/PyQt4/PyQt-x11-gpl-4.9.4.tar.gz
+  - tar zxvf PyQt-x11-gpl-4.9.4.tar.gz
+  - cd PyQt-x11-gpl-4.9.4/
   - python configure.py
   - make
   - sudo make install
+  - cd ..
   - python -c 'import PyQt4'
   - python -c 'import PyQt4.QtCore'
 install:
