@@ -3,14 +3,14 @@ python:
   - 2.7
 script: make travis
 before_install:
-  - pip install sip
+  - result=`pip install sip`
   - cd $VIRTUAL_ENV/build/sip
   - python configure.py
   - make
   - sudo make install
   - cd $VIRTUAL_EN
   - python -c 'import sip'
-  - pip install pyqt
+  - result=`pip install pyqt`
   - cd $VIRTUAL_ENV/build/pyqt
   - python configure.py
   - make
