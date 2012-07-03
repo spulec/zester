@@ -7,7 +7,7 @@ from ghost import Ghost
 
 class Client(object):
     def __init__(self):
-        assert self.url
+        assert self.url, "All clients must have a URL attribute"
         self._attributes = self._collect_attributes()
         self._class_model = self._setup_class_model()
         self._ghost = Ghost()

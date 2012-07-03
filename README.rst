@@ -9,17 +9,13 @@ No lxml, no XPath, just javascript.
 
 Let's make a client library for `Hacker News <http://news.ycombinator.com/>`_ by saving the following code in a file named hnclient.py::
 
-    from zester import ClientLibrary, Attribute
+    from zester import Client, Attribute
 
-    class HNClient(ClientLibrary):
+    class HNClient(Client):
+        url = "http://news.ycombinator.com/"
         title = Attribute(selector="$('.title a')", modifier="$(el).html()")
         link = Attribute(selector="$('.title a')"), modifier="$(el).attr('href')")
         points = Attribute(selector="$('.subtext span')", modifier="$(el).html().replace(' points', '')")
-
-        def __init__(self, url="http://news.ycombinator.com/"):
-            self.url = url
-            super(HNClient, self).__init__()
-
 
 Now, let's use the client we just made. Open a python shell::
 
