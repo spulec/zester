@@ -11,7 +11,7 @@ before_install:
   - sudo make install
   - cd ..
   - python -c 'import sip'
-  - sudo apt-get install libqt4-dev python-qt4
+  - sudo apt-get install libqt4-dev python-qt4 pyqt4-dev-tools qt4-designer
   # - wget http://www.riverbankcomputing.com/static/Downloads/PyQt4/PyQt-x11-gpl-4.9.4.tar.gz
   # - tar zxvf PyQt-x11-gpl-4.9.4.tar.gz
   # - cd PyQt-x11-gpl-4.9.4/
