@@ -61,6 +61,8 @@ This also demonstrates how you can allow arguments to be taken::
 Installation
 ------------
 
-To install zester, simply: ::
+Zester is dependant upon `Ghost.py <http://jeanphix.me/Ghost.py/>`_. You must install it before installing Zester. Ghost.py will also require the installation of either PyQt or PySide.
+
+After Ghost.py is installed, to install zester: ::
 
     $ pip install zester
