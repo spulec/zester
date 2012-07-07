@@ -15,6 +15,6 @@ __author__ = 'Steve Pulec'
 __license__ = 'ISC'
 __copyright__ = 'Copyright 2012 Steve Pulec'
 
-from .client import Client, Attribute
+from .client import SingleClient, MultipleClient, Attribute
 
-__all__ = ["Client", "Attribute"]
+__all__ = ["SingleClient", "MultipleClient", "Attribute"]
